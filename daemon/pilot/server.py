@@ -568,6 +568,7 @@ class PilotServer:
                 await self._broadcast_notification("task_complete", payload)
             except Exception:
                 pass
+
         emit = self._reasoning
         if emit:
             emit.reset()
